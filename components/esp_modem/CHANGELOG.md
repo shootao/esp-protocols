@@ -1,5 +1,47 @@
 # Changelog
 
+## [1.2.1](https://github.com/espressif/esp-protocols/commits/modem-v1.2.1)
+
+### Bug Fixes
+
+- Use higher GPIO range to support new chips ([428fdbbd](https://github.com/espressif/esp-protocols/commit/428fdbbd), [#558](https://github.com/espressif/esp-protocols/issues/558))
+- Remove tests and support for IDFv4.4, added IDFv5.4 ([433a033f](https://github.com/espressif/esp-protocols/commit/433a033f))
+- Fix typo GENETIC -> GENERIC in mode types ([090b1ff8](https://github.com/espressif/esp-protocols/commit/090b1ff8), [#667](https://github.com/espressif/esp-protocols/issues/667))
+- Add support for URC handler into C-API ([295d99df](https://github.com/espressif/esp-protocols/commit/295d99df), [#180](https://github.com/espressif/esp-protocols/issues/180))
+
+## [1.2.0](https://github.com/espressif/esp-protocols/commits/modem-v1.2.0)
+
+### Features
+
+- Add support for guessing mode ([52598e5f](https://github.com/espressif/esp-protocols/commit/52598e5f))
+- Delete CMUX internal implementation even if terminal exit fails ([0e0cbd6b](https://github.com/espressif/esp-protocols/commit/0e0cbd6b))
+- Add support for handling URC ([1b6a3b3b](https://github.com/espressif/esp-protocols/commit/1b6a3b3b), [#180](https://github.com/espressif/esp-protocols/issues/180))
+- add ability to change ESP_MODEM_C_API_STR_MAX from Kconfig ([17909892](https://github.com/espressif/esp-protocols/commit/17909892))
+- Added target test config with CHAP authentication ([f8ae7def](https://github.com/espressif/esp-protocols/commit/f8ae7def))
+- example add esp32p4 usb support ([adafeae5](https://github.com/espressif/esp-protocols/commit/adafeae5))
+- Publish mbedtls component ([0140455f](https://github.com/espressif/esp-protocols/commit/0140455f))
+- host test support of the latest ESP-IDF release ([3f74b4e8](https://github.com/espressif/esp-protocols/commit/3f74b4e8))
+
+### Bug Fixes
+
+- Fix console example to use urc/detect features ([1a9eaf3e](https://github.com/espressif/esp-protocols/commit/1a9eaf3e))
+- Update target test builds to use external Catch2 ([554f022c](https://github.com/espressif/esp-protocols/commit/554f022c))
+- Fix arguments names when spawn esp_modem_xxx declarations ([b6792c52](https://github.com/espressif/esp-protocols/commit/b6792c52))
+- Remove catch dependency ([c3480768](https://github.com/espressif/esp-protocols/commit/c3480768))
+- Examples: use local configs for MQTT topic/data ([f5c13b92](https://github.com/espressif/esp-protocols/commit/f5c13b92))
+- Fixed clang-tidy warnings ([70fa3af7](https://github.com/espressif/esp-protocols/commit/70fa3af7))
+- Fix CI build per IDFv5.3 ([d0c17ef0](https://github.com/espressif/esp-protocols/commit/d0c17ef0))
+- Fixed UART task to check for buffered data periodically ([4bdd90cc](https://github.com/espressif/esp-protocols/commit/4bdd90cc), [#536](https://github.com/espressif/esp-protocols/issues/536))
+- Cleanup unused configs from PPPoS example ([08a62ccc](https://github.com/espressif/esp-protocols/commit/08a62ccc))
+- Update CMUX example with SIM7070_gnss cleaned-up ([56fe5327](https://github.com/espressif/esp-protocols/commit/56fe5327))
+- Update console example with SIM7070_gnss format comments ([5baaf542](https://github.com/espressif/esp-protocols/commit/5baaf542))
+- Fix remaining print format warnings ([3b80181d](https://github.com/espressif/esp-protocols/commit/3b80181d))
+
+### Updated
+
+- docs(modem): Fix esp_modem_at_raw() description (C-API) ([492a6a00](https://github.com/espressif/esp-protocols/commit/492a6a00))
+- ci(common): updated github actions(checkout, upload, download) v3 to 4, Ubuntu 20.04 to v22.04 ([a23a0027](https://github.com/espressif/esp-protocols/commit/a23a0027))
+
 ## [1.1.0](https://github.com/espressif/esp-protocols/commits/modem-v1.1.0)
 
 ### Features
